@@ -7,34 +7,36 @@
             width: 400px;
             padding: 10px;
             font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #000;
-            transition: background-color 0.5s ease-in, color 0.5s ease-in;
+            background-color: white;
+            color: black;
+            transition: background-color 0.5s, color 0.5s;
         }
         body:hover {
-            background-color: #333;
-            color: #fff;
+            background-color: black;
+            color: white;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            transition: background-color 0.5s ease-in, color 0.5s ease-in;
+            transition: background-color 0.2s, color 0.2s;
+            border-radius: 10px;
+            overflow: hidden;
         }
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
-            transition: background-color 0.5s ease-in, color 0.5s ease-in;
+            transition: background-color 0.2s, color 0.2s;
         }
         th {
             background-color: #f2f2f2;
         }
         body:hover th {
-            background-color: #555;
+            background-color: #333;
         }
-        body:hover td {
-            background-color: #444;
+        body:hover th, body:hover td {
+            border-color: #444;
         }
     </style>
 </head>

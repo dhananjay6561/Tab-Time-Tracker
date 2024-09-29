@@ -152,4 +152,5 @@ If you find a bug or have a suggestion for improving the extension:
 4. For feature suggestions, explain the proposed feature and its potential benefits.
 
 
+
 Thank you for your interest in improving Tab Time Tracker!

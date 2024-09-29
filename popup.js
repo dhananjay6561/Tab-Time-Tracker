@@ -47,7 +47,7 @@ function updateComparisonTable() {
                 let timeSpent = tabTimes[tab.id] || 0;
                 const timeInSeconds = Math.floor(timeSpent / 1000);
                 
-                if (timeInSeconds > 0) {  
+                if (timeInSeconds > 0) {  // Only include tabs with non-zero time
                     const row = tableBody.insertRow();
                     const cellTitle = row.insertCell(0);
                     const cellTime = row.insertCell(1);
