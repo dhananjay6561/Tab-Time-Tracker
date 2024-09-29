@@ -9,6 +9,7 @@ Tab Time Tracker is a Chrome extension designed to monitor and record the time s
 - Real-time tracking of active tab duration
 - Persistent storage of time data across browser sessions
 - User-friendly popup interface displaying time spent on the current tab
+- Comparison table showing time spent across all tabs
 - Background processing to ensure accurate timing even when the popup is closed
 
 ## Technical Implementation
@@ -40,10 +41,12 @@ To install the extension for development:
 
 ## Usage
 
-After installation, the extension will automatically begin tracking tab usage. To view the time spent on the current tab:
+After installation, the extension will automatically begin tracking tab usage. To view the time spent on tabs:
 
 1. Click the extension icon in the Chrome toolbar
-2. The popup will display the time spent on the active tab
+2. The popup will display:
+   - Time spent on the active tab
+   - A table comparing time spent across all tabs
 
 ## Development
 
@@ -71,7 +74,6 @@ Time data is stored using Chrome's `storage.local` API. This ensures data persis
 
 - The extension only tracks time when Chrome is open and the user is actively using the browser
 - Time tracking may be less accurate during periods of system sleep or when Chrome is in the background
-
 
 ## Future Updates
 
@@ -113,9 +115,41 @@ These planned updates aim to transform the Tab Time Tracker from a simple time-t
 
 ## Contributing
 
-Contributions to the Tab Time Tracker project are welcome. Please follow these steps:
+Contributions to the Tab Time Tracker project are welcome. Here's how you can contribute:
 
-1. Fork the repository
-2. Create a new branch for your feature or bug fix
-3. Commit changes and push to the branch
-4. Submit a pull request with a clear description of the changes
+1. Fork the repository on GitHub.
+2. Clone your forked repository to your local machine.
+3. Create a new branch for your feature or bug fix:
+   ```
+   git checkout -b feature/your-feature-name
+   ```
+   or
+   ```
+   git checkout -b fix/your-bug-fix
+   ```
+4. Make your changes and commit them with a clear, descriptive commit message.
+5. Push your changes to your fork on GitHub:
+   ```
+   git push origin feature/your-feature-name
+   ```
+6. Open a pull request from your fork to the main repository.
+7. Provide a clear description of the changes and any relevant issue numbers in the pull request description.
+
+### Contribution Guidelines
+
+- Ensure your code adheres to the existing style of the project to maintain consistency.
+- Update the README.md with details of changes to the interface, if applicable.
+- Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent.
+- You may merge the Pull Request once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
+
+### Reporting Issues
+
+If you find a bug or have a suggestion for improving the extension:
+
+1. Check the GitHub Issues to see if the bug or suggestion has already been reported.
+2. If not, open a new issue, providing as much relevant information as possible.
+3. For bugs, describe the issue in detail, including steps to reproduce, expected behavior, and actual behavior.
+4. For feature suggestions, explain the proposed feature and its potential benefits.
+
+
+Thank you for your interest in improving Tab Time Tracker!
