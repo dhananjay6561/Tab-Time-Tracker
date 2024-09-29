@@ -32,7 +32,7 @@ To install the extension for development:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/dhananjay6561/tab-time-tracker.git
+   git clone https://github.com/[username]/tab-time-tracker.git
    ```
 2. Navigate to `chrome://extensions/` in the Chrome browser
 3. Enable "Developer mode" in the top right corner
