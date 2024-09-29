@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Tab Time Tracker</title>
     <style>
         body {
-            width: 250px;
-            padding: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            color: #ff0000;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
+            width: 400px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            transition: background-color 0.5s ease-in, color 0.5s ease-in;
         }
         body:hover {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #333;
+            color: #fff;
         }
-        h3 {
-            text-align: center;
-            color: #000000;
-            margin-bottom: 20px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            transition: background-color 0.5s ease-in, color 0.5s ease-in;
         }
-        body:hover h3 {
-            color: #ffffff;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            transition: background-color 0.5s ease-in, color 0.5s ease-in;
         }
-        p {
-            text-align: center;
-            font-size: 1.4em;
-            margin: 10px 0;
-            transition: color 0.3s ease;
+        th {
+            background-color: #f2f2f2;
         }
-        p:hover {
-            color: #4a4a8c;
+        body:hover th {
+            background-color: #555;
+        }
+        body:hover td {
+            background-color: #444;
         }
     </style>
 </head>
 <body>
-    <h3>Time Spent</h3>
-    <p id="time">Loading...</p>
+    <h2>Time Spent</h2>
+    <div id="time">Loading...</div>
+    <h2>Time Comparison Across Tabs</h2>
+    <table id="comparisonTable">
+        <thead>
+            <tr>
+                <th>Tab</th>
+                <th>Time Spent</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
     <script src="popup.js"></script>
 </body>
 </html>
