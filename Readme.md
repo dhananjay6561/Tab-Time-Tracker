@@ -31,7 +31,7 @@ Key components:
 
 To install the extension for development:
 
-1. Clone the repository:
+1.  Clone the repository:
    ```bash
    git clone https://github.com/dhananjay6561/tab-time-tracker.git
    ```
